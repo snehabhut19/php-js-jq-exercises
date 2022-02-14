@@ -1,0 +1,44 @@
+<!-- 5. Write a JavaScript program to check two given numbers and return true if one of the number
+is 50 or if their sum is 50. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<p>value: a = 50 , b= 50</p>
+	<div class="p1"></div>
+	<p>value: a = 20 , b= 50</p>
+	<div class="p2"></div>
+	<p>value: a = 20 , b= 30</p>
+	<div class="p3"></div>
+	<p>value: a = 20 , b= 20</p>
+	<div class="p4"></div>
+
+	<script>
+		function checknum(a,b) 
+		{
+			if((a==50 || b==50) || (a+b==50))
+			{
+				return true;
+			}else 
+			{
+				return false;
+			}
+
+			// body...
+		}
+		jQuery(document).ready(function($) {
+			$(".p1").html(checknum(50,50));
+			$(".p2").html(checknum(20,50));
+			$(".p3").html(checknum(20,30));
+			$(".p4").html(checknum(20,20));
+		});
+	</script>
+</body>
+</html>
