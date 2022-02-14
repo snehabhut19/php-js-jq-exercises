@@ -1,0 +1,25 @@
+<!-- 11. Using jQuery insert some HTML after all paragraphs. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> jquery Task 11</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>Hello</p>
+    <p>i am sneha bhut</p>
+    <p>this is jquery tutorial.</p>
+    <button>Click Here</button>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").after(
+            "<p>This is jquery program.</p>"
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

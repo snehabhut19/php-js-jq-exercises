@@ -1,0 +1,25 @@
+<!-- 14. Border around all list items that are children of a specified class of an unordered list. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task 14</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <ul class="color">
+      <li>red</li>
+      <li>green</li>
+      <li>White</li>
+      <li>blue</li>
+    </ul>
+    <script>
+      $(".color")
+        .children()
+        .css("border", "2px solid blue")
+        .css("width", "40px");
+    </script>
+  </body>
+</html>

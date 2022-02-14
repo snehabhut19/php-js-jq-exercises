@@ -1,0 +1,28 @@
+<!-- 3. Given a paragraph, Underline all the words of a text using jQuery -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<p> move the mouse pointer on the text to make text underline</p>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("p").on({
+				mouseenter:function()
+				{
+				 $(this).css('text-decoration', 'underline');
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>
